@@ -211,7 +211,7 @@ bot.on('message', async (msg) => {
         bot.sendMessage(chatId, `🔄 *Processing your link...*`).then(sentMessage => {
     const messageId = sentMessage.message_id;
 
-    axios.get(`https://maxboxshare.com//?link=${text}&apikey=cf8b6a45f2983680901d85921a8977feef717f10`)
+    axios.get(`https://maxboxshare.com//?link=${text}&apikey=7aabdae15ab05ecf44aa5a37fb40ae0babbd5d2d`)
         .then(response => {
             const downloadUrl = response.data.url;
 
