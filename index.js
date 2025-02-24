@@ -211,7 +211,7 @@ bot.on('message', async (msg) => {
         bot.sendMessage(chatId, `🔄 *Processing your link...*`).then(sentMessage => {
     const messageId = sentMessage.message_id;
 
-    axios.get(`https://tera.ronok.workers.dev/?link=${text}&apikey=0b010c132e2cbd862cbd8a6ae430dd51d3a0d5ea`)
+    axios.get(`https://maxshare.pro/?link=${text}&apikey=cf8b6a45f2983680901d85921a8977feef717f10`)
         .then(response => {
             const downloadUrl = response.data.url;
 
